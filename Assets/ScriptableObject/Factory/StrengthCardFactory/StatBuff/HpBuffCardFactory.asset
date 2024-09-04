@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ebeb7242d848444e99c3e84a96bbdca, type: 3}
+  m_Name: HpBuffCardFactory
+  m_EditorClassIdentifier: 
+  <Prefab>k__BackingField: {fileID: 3750926591768369710, guid: 71df82b637269964d80102a341731b3b, type: 3}

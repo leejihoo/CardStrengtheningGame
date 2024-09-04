@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9443cdf783d3c09419fdb663f26f1428, type: 3}
+  m_Name: RandomChoicePlace
+  m_EditorClassIdentifier: 
+  ChoiceCount: 3
+  ChoiceWidth: 450
+  ChoiceHeight: 600
+  ChoicesPos:
+  - {fileID: 11400000, guid: 88ec5fc785e2e404a9003761e6ef492c, type: 2}
+  - {fileID: 11400000, guid: 89f3d0cbe6506c64eb6ecd66a8ec76e5, type: 2}
+  - {fileID: 11400000, guid: 5173c4195fe89c944b322c8ab536ba73, type: 2}

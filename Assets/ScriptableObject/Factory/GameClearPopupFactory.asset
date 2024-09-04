@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f353c8f5126099645a38487b689f26ba, type: 3}
+  m_Name: GameClearPopupFactory
+  m_EditorClassIdentifier: 
+  <Prefab>k__BackingField: {fileID: 3669811033690683196, guid: fe23ca75ffe71f04ab38b3df0bc330ad, type: 3}
+  <FactoryType>k__BackingField: 0

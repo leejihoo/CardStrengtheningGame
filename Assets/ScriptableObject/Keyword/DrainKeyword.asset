@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 192897f41a0cbad408d416fb3858b550, type: 3}
+  m_Name: DrainKeyword
+  m_EditorClassIdentifier: 
+  keywordPopupPrefab: {fileID: 3655541615526758271, guid: 32ff54cfbc682ab4fa95d40a18cf38b1, type: 3}
