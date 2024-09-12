@@ -400,6 +400,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5942834237982026758, guid: 8ce21545c93fef94f91d77ce300d820d, type: 3}
+      propertyPath: cardStrengthGameStateList.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942834237982026758, guid: 8ce21545c93fef94f91d77ce300d820d, type: 3}
+      propertyPath: cardStrengthGameStateList.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 091562a6ae95b53458a7b7cf69b6c00d, type: 2}
+    - target: {fileID: 5942834237982026758, guid: 8ce21545c93fef94f91d77ce300d820d, type: 3}
+      propertyPath: cardStrengthGameStateList.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 668790608c255314497aa4fe0aa8fd85, type: 2}
+    - target: {fileID: 5942834237982026758, guid: 8ce21545c93fef94f91d77ce300d820d, type: 3}
+      propertyPath: cardStrengthGameStateList.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: b1d3bd2371cbc274c8d30ca23c549821, type: 2}
+    - target: {fileID: 5942834237982026758, guid: 8ce21545c93fef94f91d77ce300d820d, type: 3}
+      propertyPath: cardStrengthGameStateList.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: c57f82fbcf355a246b93e6c2b3b8c4f5, type: 2}
     - target: {fileID: 5942834237982026873, guid: 8ce21545c93fef94f91d77ce300d820d, type: 3}
       propertyPath: m_RootOrder
       value: 4

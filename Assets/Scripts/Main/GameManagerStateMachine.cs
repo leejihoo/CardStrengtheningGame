@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Abstract;
 using Enum;
 using UnityEngine;
@@ -7,53 +8,31 @@ namespace Main
 {
     public class GameManagerStateMachine : StateMachine
     {
-        private CardStrengthGameState _currentState;
-        [SerializeField] private GameReadyState _gameReadyState;
-        [SerializeField] private GamePlayingState _gamePlayingState;
-        [SerializeField] private GameClearState _gameClearState;
-        [SerializeField] private GameOverState _gameOverState;
-        private GameManagerStateType _gameManagerStateType;
+        private Dictionary<GameManagerStateType,CardStrengthGameState> _cardStrengthGameStateDictionary;
+        
+        [SerializeField] private List<CardStrengthGameState> cardStrengthGameStateList;
+        private void Awake()
+        {
+            InitDictionary();
+        }
 
         private void Start()
         {
-            Initialize(_gameReadyState);
-        }
-
-        public void Initialize(CardStrengthGameState startingState)
-        {
-            _currentState = startingState;
-            _currentState.Enter();
-        }
-
-        public void TransitionTo(CardStrengthGameState nextState)
-        {
-            _currentState.Exit();
-            _currentState = nextState;
-            nextState.Enter();
-        }
-
-        private void Update()
-        {
-            if(_currentState != null)
-                _currentState.Stay();
+            Initialize(_cardStrengthGameStateDictionary[GameManagerStateType.Ready]);
         }
         
         public void ChangeState(GameManagerStateType stateType)
         {
-            switch (stateType)
+            TransitionTo(_cardStrengthGameStateDictionary[stateType]);
+        }
+
+        private void InitDictionary()
+        {
+            _cardStrengthGameStateDictionary = new Dictionary<GameManagerStateType, CardStrengthGameState>();
+            
+            foreach (var state in cardStrengthGameStateList)
             {
-                case GameManagerStateType.Ready:
-                    TransitionTo(_gameReadyState);
-                    break;
-                case GameManagerStateType.Playing:
-                    TransitionTo(_gamePlayingState);
-                    break;
-                case GameManagerStateType.Clear:
-                    TransitionTo(_gameClearState);
-                    break;
-                case GameManagerStateType.Over:
-                    TransitionTo(_gameOverState);
-                    break;
+                _cardStrengthGameStateDictionary[state.StateType] = state;
             }
         }
     }

@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d415667998365840b68f8ed29bc51ba, type: 3}
   m_Name: GameClearState
   m_EditorClassIdentifier: 
+  <StateType>k__BackingField: 2
