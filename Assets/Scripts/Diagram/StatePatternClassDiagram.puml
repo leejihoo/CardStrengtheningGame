@@ -1,0 +1,29 @@
+@startuml
+class GameManagerStateMachine
+class GameManager
+class StateMachine
+class CardStrengthGameState
+class GamePlayingState
+class GameClearState
+class GameOverState
+class GameReadyState
+interface IState
+class ScriptableObject
+
+GameManager *-- GameManagerStateMachine
+
+GameManagerStateMachine *-- GamePlayingState
+GameManagerStateMachine *-- GameClearState
+GameManagerStateMachine *-- GameOverState
+GameManagerStateMachine *-- GameReadyState
+GameManagerStateMachine --> StateMachine
+
+GamePlayingState --|> CardStrengthGameState
+GameClearState --|> CardStrengthGameState
+GameOverState --|> CardStrengthGameState
+GameReadyState --|> CardStrengthGameState
+
+CardStrengthGameState --|> IState
+CardStrengthGameState --|> ScriptableObject
+
+@enduml
